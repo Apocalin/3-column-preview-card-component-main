@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.firstcolumn {
+  line-height: 25px;
+  padding: 50px;
+  max-width: 20%;
+  max-height: 170%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.secondcolumn {
+  line-height: 25px;
+  padding: 50px;
+  max-width: 20%;
+  align-items: flex-start;
+  max-height: 170%;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(184, 100%, 22%);
+}
+.thirdcolumn {
+  line-height: 25px;
+  padding: 50px;
+  max-width: 20%;
+  align-items: flex-start;
+  max-height: 170%;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.attribution {
+  display: flex;
+}
+p {
+  margin-bottom: 22px;
+  font-family: "Lexend Deca";
+  color: hsla(0, 0%, 100%, 0.5);
+}
+h2 {
+  margin-top: 44px;
+  margin-bottom: 22px;
+  font-family: "Big Shoulders Display";
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-size: 250%;
+  font-weight: 700;
+}
+button {
+  margin-top: 60px;
+  font-size: 15px;
+  font-family: "Lexend Deca";
+  width: 70%;
+  height: 45px;
+  border: white;
+  border-radius: 30px;
+}
+.firstcolumn button {
+  color: hsl(31, 77%, 52%);
+}
+.firstcolumn button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: solid 2px;
+  cursor: pointer;
+}
+.secondcolumn button {
+  color: hsl(184, 100%, 22%);
+}
+.secondcolumn button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: solid 2px;
+  cursor: pointer;
+}
+.thirdcolumn button {
+  color: hsl(179, 100%, 13%);
+}
+.thirdcolumn button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: solid 2px;
+  cursor: pointer;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1140px) {
+  .container {
+    max-height: 100%;
+    max-width: 80%;
+    margin-top: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  button {
+  }
+  h2 {
+  }
+  .firstcolumn {
+    max-width: 100%;
+    border-radius: 0px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .secondcolumn {
+    max-width: 100%;
+  }
+  .thirdcolumn {
+    max-width: 100%;
+    border-radius: 0px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  section {
+    justify-content: center;
+    align-items: center;
+  }
+  .attribution {
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 130%;
+  }
+}
