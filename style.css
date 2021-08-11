@@ -160,10 +160,6 @@ section {
     flex-direction: column;
     align-items: center;
   }
-  button {
-  }
-  h2 {
-  }
   .firstcolumn {
     max-width: 100%;
     border-radius: 0px;
